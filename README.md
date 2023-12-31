@@ -6,6 +6,28 @@ The program provides two main functions: 'encrypt' and 'decrypt'. The 'encrypt' 
 
 The core of the encryption and decryption is the encryptDecryptChar function. This function is responsible for handling individual characters, ensuring that only alphabetic characters are shifted, and preserving the case of the original letters.
 
+### Example:
+    Plaintext: "HELLO"
+    Shift: 3
+
+__Encryption:__
+
+    'H' is at position 7, so the encrypted character is at (7 + 3) % 26 = 10, which is 'K'.
+    'E' becomes 'H'.
+    'L' becomes 'O'.
+    'L' becomes 'O'.
+    'O' becomes 'R'.
+    The encrypted ciphertext is "KHOOR".
+
+__Decryption:__
+
+    'K' is at position 10, so the decrypted character is at (10 - 3) % 26 = 7, which is 'H'.
+    'H' becomes 'E'.
+    'O' becomes 'L'.
+    'O' becomes 'L'.
+    'R' becomes 'O'.
+    The decrypted plaintext is "HELLO".
+
 ## Output
 ![image](https://github.com/kxvassiliou0/caesarcipher/assets/34982747/d149f0f3-23b9-4978-9dc8-7e66e189b806)
 
